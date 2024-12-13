@@ -1,15 +1,15 @@
 import React from 'react'
 import { wrapFieldsWithMeta } from 'tinacms'
 
-// This WILL NOT Build 
-export const imageOptionsEffectsBreaking = [
+// This WILL NOT Build when shared between two diffent block tempaltes.
+export const imageOptionsEffects = [
   {
     name: 'effects',
     type: 'object',
     label: 'Effects',
     fields: [
-      // At this point, we reach the max depth of nested object fields when shared between two diffent block tempaltes. 
-      // The tina-lock.json generation gets crazy here resulting in "Checking local Tina Schema matches server." errors!!!
+      // At this point, we reach the max depth of nested object fields.
+      // The tina-lock.json generation begins to behave strange, leading to 'Checking local Tina schema matches server' errors!
       {
         name: 'optimizations',
         type: 'object',
@@ -47,7 +47,7 @@ export const imageOptionsEffectsBreaking = [
 ]
 
 // This one WILL Build.
-export const imageOptionsEffects = [
+export const imageOptionsEffectsWorking = [
   {
     name: 'effects',
     type: 'object',
