@@ -18,6 +18,7 @@ export const imageFieldsetGenerative = [
     name: 'advancedImageOptions',
     type: 'object',
     label: 'Image Options',
-    fields: [...imageOptionsEffects, ...imageOptionsGenerativeAi],
+    // fields: [...imageOptionsEffects, ...imageOptionsGenerativeAi],
+    fields: [...imageOptionsGenerativeAi]
   },
 ]
