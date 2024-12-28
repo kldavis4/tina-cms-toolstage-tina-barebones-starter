@@ -10,12 +10,6 @@ export default {
   format: "mdx",
   fields: [
     {
-      name: "body",
-      label: "Main Content",
-      type: "rich-text",
-      isBody: true,
-    },
-    {
       name: 'blocks',
       type: 'object',
       label: "Sections",
@@ -27,11 +21,6 @@ export default {
         imageBlockSchema,
         generativeImageBlockSchema
       ],
-    },
-    {
-    name: 'imgSrc',
-    type: 'image',
-    label: 'Image Source',
     },
   ],
   ui: {
