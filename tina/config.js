@@ -26,8 +26,15 @@ export const config = defineConfig({
     outputFolder: "admin", // within the public folder
   },
   schema: {
-    collections: [page, post],
+    collections: [page],
   },
+
+  tinaioConfig: {
+    contentApiUrlOverride: process.env.NEXT_PUBLIC_TINA_CONTENT_API,
+    identityApiUrlOverride: process.env.NEXT_PUBLIC_TINA_IDENTITY_API,
+    frontendUrlOverride: process.env.NEXT_PUBLIC_TINA_FRONTEND,
+  }
+
 });
 
 export default config;
