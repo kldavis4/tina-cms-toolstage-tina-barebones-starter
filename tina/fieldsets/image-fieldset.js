@@ -1,9 +1,9 @@
 import { imageOptionsGenerativeAi } from './image-options-generative-ai';
-import { imageOptionsSource } from './image-options-source';
+// import { imageOptionsSource } from './image-options-source';
 import { imageOptionsEffects } from './image-options-effects';
 
 export const imageFieldset = [
-  ...imageOptionsSource,
+  // ...imageOptionsSource,
   {
     name: 'advancedImageOptions',
     type: 'object',
@@ -13,7 +13,7 @@ export const imageFieldset = [
 ]
 
 export const imageFieldsetGenerative = [
-  ...imageOptionsSource,
+  // ...imageOptionsSource,
   {
     name: 'advancedImageOptions',
     type: 'object',
